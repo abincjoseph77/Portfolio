@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <div className="container">
-        <h1>Abion C J</h1>
+        <h1>Abin C J</h1>
         <h2>Python Full-stack Developer</h2>
         <nav>
           <ul>

@@ -14,7 +14,7 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     alert('Thank you for your message! I will get back to you soon.');
     console.log('Form Submitted:', formData);
