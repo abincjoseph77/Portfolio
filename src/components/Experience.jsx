@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-function Experience(){
-    return(
-        <section id="experience" className="section">
+function Experience() {
+  return (
+    <section id="experience" className="section">
       <div className="container">
         <h2>Experience</h2>
         <div className="timeline">
@@ -17,7 +17,6 @@ function Experience(){
               </ul>
             </div>
           </div>
-
           <div className="timeline-item">
             <div className="timeline-date">2017 - 2020</div>
             <div className="timeline-content">
@@ -32,7 +31,7 @@ function Experience(){
         </div>
       </div>
     </section>
-    )
-
+  );
 }
+
 export default Experience;

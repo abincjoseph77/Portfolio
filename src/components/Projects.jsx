@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
 
 const projects = [
   {
@@ -49,10 +48,42 @@ const projects = [
   },
 ];
 
+function Projects() {
+  const [activeProject, setActiveProject] = useState(projects[0].id);
 
-function Projects(){
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 200; // Adjust this value as needed
+      
+      projects.forEach(project => {
+        const element = document.getElementById(project.id);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetHeight = element.offsetHeight;
+          
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveProject(project.id);
+          }
+        }
+      });
+    };
 
-return(
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleNavClick = (projectId, e) => {
+    e.preventDefault();
+    const element = document.getElementById(projectId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 100,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  return (
     <section id="projects" className="section">
       <div className="container">
         <h2>My Projects</h2>
@@ -61,7 +92,13 @@ return(
             <ul>
               {projects.map(project => (
                 <li key={project.id}>
-                  <a href={`#${project.id}`}>{project.title}</a>
+                  <a 
+                    href={`#${project.id}`}
+                    className={activeProject === project.id ? 'active' : ''}
+                    onClick={(e) => handleNavClick(project.id, e)}
+                  >
+                    {project.title}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -97,6 +134,7 @@ return(
         </div>
       </div>
     </section>
-    );
+  );
 }
+
 export default Projects;

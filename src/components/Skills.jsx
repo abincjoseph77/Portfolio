@@ -1,9 +1,8 @@
 import React from 'react';
 
-function Skills(){
-
-    return(
-        <section id="skills" className="section">
+function Skills() {
+  return (
+    <section id="skills" className="section">
       <div className="container">
         <h2>My Skills</h2>
         <div className="skills-grid">
@@ -37,7 +36,7 @@ function Skills(){
         </div>
       </div>
     </section>
-    )
-
+  );
 }
-export default Skills
+
+export default Skills;
