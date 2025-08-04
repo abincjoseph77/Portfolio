@@ -25,7 +25,6 @@ const projects = [
     image: '/images/topics.png',
     title: 'Task Automation',
     description: 'Automated business workflows saving 20+ hours weekly through Python scripting.',
-    tech: ['Python', 'Selenium', 'Automation'],
     github: 'https://github.com/yourusername/task-automation',
     demo: 'https://automation-demo.com',
   },
@@ -34,7 +33,7 @@ const projects = [
     image: '/images/todo.png',
     title: 'Weather Application',
     description: 'Real-time weather forecasting app with location detection and 5-day forecasts.',
-    tech: ['React', 'API', 'CSS'],
+
     github: 'https://github.com/yourusername/weather-app',
     demo: 'https://weather-demo.com',
   },
@@ -43,7 +42,7 @@ const projects = [
     image: '/images/portfolio.png',
     title: 'Portfolio Website',
     description: 'Responsive personal portfolio website showcasing projects and skills.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+
     github: 'https://github.com/yourusername/portfolio',
     demo: 'https://portfolio-demo.com',
   },
@@ -62,7 +61,9 @@ function Projects() {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
           
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (scrollPosition >= offsetTop &&
+             scrollPosition < offsetTop + offsetHeight
+            ) {
             setActiveProject(project.id);
           }
         }
@@ -77,8 +78,11 @@ function Projects() {
     e.preventDefault();
     const element = document.getElementById(projectId);
     if (element) {
+      const yOffset = -80;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
       window.scrollTo({
-        top: element.offsetTop - 100,
+        top: y,
         behavior: 'smooth'
       });
     }
@@ -110,21 +114,16 @@ function Projects() {
                 <div id={project.id} key={project.id} className="project-card">
                   <div className="project-image-container">
                     <img src={project.image} alt={project.title} className="project-image" />
-                    <div className="project-tech-tags">
-                      {project.tech.map(tag => (
-                        <span className="tech-tag" key={tag}>{tag}</span>
-                      ))}
-                    </div>
                   </div>
                   <div className="project-content">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
                     <div className="project-links">
                       <a href={project.github} className="project-link" target="_blank" rel="noreferrer">
-                        <i className="fab fa-github"></i> GitHub
+                        <i className="fab fa-github"></i> 
                       </a>
                       <a href={project.demo} className="project-link" target="_blank" rel="noreferrer">
-                        <i className="fas fa-external-link-alt"></i> Live Demo
+                        <i className="fas fa-external-link-alt"></i>
                       </a>
                     </div>
                   </div>
