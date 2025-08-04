@@ -7,7 +7,7 @@ function Home() {
 
   // Function to handle CV download
   const handleDownloadCV = () => {
-    const cvUrl = '/documents/abin_C_j_Resume (2).pdf';
+    const cvUrl = '/documents/my-cv.pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
     link.download = 'Abion_CJ_CV.pdf';
@@ -45,14 +45,14 @@ function Home() {
       <br /><br />
       <div className="container">
         <br /><br />
-        
+        <h2>About Me</h2>
         <div className={`about-content ${isVisible ? 'animate-in' : ''}`}>
           <div className="profile-img">
             <img src="/images/abin.webp" alt="Profile" />
           </div>
           <div className="about-text">
-            <h1>Hey! I'm  ABIN C J</h1>
-            <p>Passionate FullStack Developer dedicated to crafting innovative web solutions with a focus on user experience, robust performance, and scalability..</p>
+            <p>Hello! I'm a passionate data scientist and web developer with 5 years of experience...</p>
+            <p>My expertise includes Python, JavaScript, machine learning, and data visualization...</p>
             <button 
               onClick={handleDownloadCV}
               className="download-btn mobile-only"

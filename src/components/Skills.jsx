@@ -8,30 +8,39 @@ function Skills() {
         <h2>My Skills</h2>
         <div className="skills-grid">
           <div className="skill-category">
-            <h3>Data Science</h3>
+            <h3>Language</h3>
             <ul>
               <li>Python</li>
-              <li>Pandas</li>
-              <li>NumPy</li>
-              <li>Scikit-learn</li>
-            </ul>
-          </div>
-          <div className="skill-category">
-            <h3>Web Development</h3>
-            <ul>
-              <li>HTML/CSS</li>
+              <li>HTML </li>
+              <li>CSS</li>
               <li>JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
             </ul>
           </div>
           <div className="skill-category">
-            <h3>Tools</h3>
+            <h3>Frameworks</h3>
+            <ul>
+              <li>REST Framework</li>
+              <li>Django</li>
+              <li>React.JS</li>
+              <li>Bootstarap</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h3>Data Base</h3>
+            <ul>
+              <li>MongoDB</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>MySql</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h3>Other Tools</h3>
             <ul>
               <li>Git</li>
-              <li>Docker</li>
+              <li>GitHub</li>
               <li>VS Code</li>
-              <li>Jupyter</li>
+              <li>Postman</li>
             </ul>
           </div>
         </div>

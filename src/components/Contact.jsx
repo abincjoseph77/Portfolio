@@ -26,12 +26,12 @@ function Contact() {
         <h2>Contact Me</h2>
         <div className="contact-content">
           <div className="contact-info">
-            <p><i className="fas fa-envelope"></i> john.doe@example.com</p>
-            <p><i className="fas fa-phone"></i> +1 (123) 456-7890</p>
+            <p><i className="fas fa-envelope"></i>abincjoseph77@gmail.com</p>
+            <p><i className="fas fa-phone"></i>9447444508</p>
             <div className="social-links">
-              <a href="#"><i className="fab fa-github"></i></a>
-              <a href="#"><i className="fab fa-linkedin"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
+              <a href="https://github.com/Abincjoseph20"><i className="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/abin-c-joseph/"><i className="fab fa-linkedin"></i></a>
+              {/* <a href=""><i className="fab fa-whatsapp"></i></a> */}
             </div>
           </div>
 

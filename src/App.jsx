@@ -8,11 +8,13 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import './App.css';
 
+
 function App() {
   return (
     <div className="app">
       <Header />
       <main>
+
         <About />
         <Skills />
         <Projects />
