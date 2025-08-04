@@ -1,6 +1,5 @@
-
-
 import React, { useState } from 'react';
+import '../components/style/contact.css';
 
 function Contact() {
     

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../components/style/skills.css';
 
 function Skills() {
   return (

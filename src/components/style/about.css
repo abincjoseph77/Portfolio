@@ -1,0 +1,80 @@
+/* About Section Styles */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.profile-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.profile-img:hover img {
+  transform: scale(1.05);
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.mobile-only {
+  display: inline-flex;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .about-text {
+    text-align: left;
+  }
+  
+  .profile-img {
+    flex-shrink: 0;
+  }
+}

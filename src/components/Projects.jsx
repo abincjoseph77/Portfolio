@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import '../components/style/projects.css';
 
 const projects = [
   {
     id: 'project1',
-    image: '/images/dsa.png',
+    image: '/images/cretal.png',
     title: 'E-commerce Platform',
     description: 'A full-featured online store with user authentication, product management, and payment processing.',
     tech: ['Django', 'PostgreSQL', 'Stripe API'],
@@ -12,7 +13,7 @@ const projects = [
   },
   {
     id: 'project2',
-    image: '/images/cretal.webp',
+    image: '/images/crm.png',
     title: 'Data Analysis Tool',
     description: 'Processes large datasets with interactive visualizations and automated reporting features.',
     tech: ['Pandas', 'Matplotlib', 'NumPy'],
@@ -21,7 +22,7 @@ const projects = [
   },
   {
     id: 'project3',
-    image: '/images/aser.png',
+    image: '/images/topics.png',
     title: 'Task Automation',
     description: 'Automated business workflows saving 20+ hours weekly through Python scripting.',
     tech: ['Python', 'Selenium', 'Automation'],
@@ -30,7 +31,7 @@ const projects = [
   },
   {
     id: 'project4',
-    image: '/images/port.png',
+    image: '/images/todo.png',
     title: 'Weather Application',
     description: 'Real-time weather forecasting app with location detection and 5-day forecasts.',
     tech: ['React', 'API', 'CSS'],
@@ -39,7 +40,7 @@ const projects = [
   },
   {
     id: 'project5',
-    image: '/images/nike.webp',
+    image: '/images/portfolio.png',
     title: 'Portfolio Website',
     description: 'Responsive personal portfolio website showcasing projects and skills.',
     tech: ['HTML', 'CSS', 'JavaScript'],

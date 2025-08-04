@@ -1,4 +1,5 @@
 import React from 'react';
+import '../components/style/about.css';
 
 function About() {
   // Function to handle CV download

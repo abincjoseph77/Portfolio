@@ -1,11 +1,10 @@
 import React from 'react';
+import '../components/style/header.css';
 
 function Header() {
   return (
     <header>
       <div className="container">
-        <h1>Abin C J</h1>
-        <h2>Python Full-stack Developer</h2>
         <nav>
           <ul>
             <li><a href="#about">About</a></li>
