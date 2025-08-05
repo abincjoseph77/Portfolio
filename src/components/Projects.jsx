@@ -91,7 +91,7 @@ function Projects() {
   return (
     <section id="projects" className="section">
       <div className="container">
-        <h2>My Projects</h2>
+        <h2>Projects</h2>
         <div className="projects-wrapper">
           <div className="projects-nav">
             <ul>

@@ -8,24 +8,24 @@ function Experience() {
         <h2>Experience</h2>
         <div className="timeline">
           <div className="timeline-item">
-            <div className="timeline-date">2020 - Present</div>
+            <div className="timeline-date">2025</div>
             <div className="timeline-content">
-              <h3>Senior Data Scientist</h3>
-              <h4>Tech Solutions Inc.</h4>
+              <h3>Full stack Developer Trainee</h3>
+              <h4>Tinos Software and Security Solution LLP</h4>
               <ul>
-                <li>Developed machine learning models for predictive analytics</li>
-                <li>Created data visualization dashboards</li>
+                <li>Developed Learning Mnagement Project using Django</li>
+                <li>Developed a AI based chatbot using Python Django</li>
               </ul>
             </div>
           </div>
           <div className="timeline-item">
-            <div className="timeline-date">2017 - 2020</div>
+            <div className="timeline-date">2024</div>
             <div className="timeline-content">
-              <h3>Web Developer</h3>
-              <h4>Digital Creative Agency</h4>
+              <h3>Full stack Developer Trainee</h3>
+              <h4>Futuro IT Solutions Kochi</h4>
               <ul>
-                <li>Built responsive websites for clients</li>
-                <li>Implemented interactive features with JavaScript</li>
+                <li>Built Responsive E-commerce websites using Django</li>
+                <li>Built Responsive CRM websites using Django and hosted in Render</li>
               </ul>
             </div>
           </div>
