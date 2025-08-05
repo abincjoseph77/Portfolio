@@ -8,8 +8,8 @@ const projects = [
     title: 'E-commerce Platform',
     description: 'A full-featured online store with user authentication, product management, and payment processing.',
     tech: ['Django', 'PostgreSQL', 'Stripe API'],
-    github: 'https://github.com/yourusername/ecommerce-platform',
-    demo: 'https://ecommerce-demo.com',
+    github: 'https://github.com/Abincjoseph20/new-cretal.git',
+    demo: 'https://new-cretal.onrender.com',
   },
   {
     id: 'project2',
@@ -17,25 +17,25 @@ const projects = [
     title: 'Data Analysis Tool',
     description: 'Processes large datasets with interactive visualizations and automated reporting features.',
     tech: ['Pandas', 'Matplotlib', 'NumPy'],
-    github: 'https://github.com/yourusername/data-analysis-tool',
-    demo: 'https://data-analysis-demo.com',
+    github: 'https://github.com/Abincjoseph20/crm.git',
+    demo: 'https://crm-new-2mn1.onrender.com',
   },
   {
     id: 'project3',
     image: '/images/topics.png',
     title: 'Task Automation',
     description: 'Automated business workflows saving 20+ hours weekly through Python scripting.',
-    github: 'https://github.com/yourusername/task-automation',
-    demo: 'https://automation-demo.com',
+    github: 'https://github.com/Abincjoseph20/topic-listing.git',
+    demo: 'https://topic-listing.vercel.app/',
   },
   {
     id: 'project4',
     image: '/images/todo.png',
-    title: 'Weather Application',
+    title: 'Full-stack-Todo App',
     description: 'Real-time weather forecasting app with location detection and 5-day forecasts.',
 
-    github: 'https://github.com/yourusername/weather-app',
-    demo: 'https://weather-demo.com',
+    github: 'https://github.com/Abincjoseph20/Todo-client.git',
+    demo: 'https://todo-client-itcc.vercel.app/list',
   },
   {
     id: 'project5',
@@ -43,8 +43,8 @@ const projects = [
     title: 'Portfolio Website',
     description: 'Responsive personal portfolio website showcasing projects and skills.',
 
-    github: 'https://github.com/yourusername/portfolio',
-    demo: 'https://portfolio-demo.com',
+    github: 'https://github.com/Abincjoseph20/Portfolio.git',
+    demo: 'https://portfolio-eight-gray-30.vercel.app/',
   },
 ];
 
