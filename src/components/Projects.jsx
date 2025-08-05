@@ -31,7 +31,7 @@ const projects = [
   {
     id: 'project4',
     image: '/images/todo.png',
-    title: 'Full-stack-Todo App',
+    title: 'Full-stack Todo-App',
     description: 'Real-time weather forecasting app with location detection and 5-day forecasts.',
 
     github: 'https://github.com/Abincjoseph20/Todo-client.git',
