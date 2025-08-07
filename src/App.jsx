@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import './App.css';
+import Querts from './components/Querts';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Querts/>
         <Contact />
       </main>
     </div>

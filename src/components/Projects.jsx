@@ -14,8 +14,8 @@ const projects = [
   {
     id: 'project2',
     image: '/images/crm.png',
-    title: 'Data Analysis Tool',
-    description: 'Processes large datasets with interactive visualizations and automated reporting features.',
+    title: 'CRM Website',
+    description: 'A CRM system for banking sales executives to track daily tasks, customer interactions, and sales activities, built with Django.',
     tech: ['Pandas', 'Matplotlib', 'NumPy'],
     github: 'https://github.com/Abincjoseph20/crm.git',
     demo: 'https://crm-new-2mn1.onrender.com',
@@ -23,8 +23,8 @@ const projects = [
   {
     id: 'project3',
     image: '/images/topics.png',
-    title: 'Task Automation',
-    description: 'Automated business workflows saving 20+ hours weekly through Python scripting.',
+    title: 'Topics To Learn',
+    description: 'A React-based learning platform to explore various topics, track learning progress, and download topic materials',
     github: 'https://github.com/Abincjoseph20/topic-listing.git',
     demo: 'https://topic-listing.vercel.app/',
   },
@@ -32,7 +32,7 @@ const projects = [
     id: 'project4',
     image: '/images/todo.png',
     title: 'Full-stack Todo-App',
-    description: 'Real-time weather forecasting app with location detection and 5-day forecasts.',
+    description: 'A full-stack Todo app with a React frontend and Django REST backend for creating, updating, and managing tasks',
 
     github: 'https://github.com/Abincjoseph20/Todo-client.git',
     demo: 'https://todo-client-itcc.vercel.app/list',
