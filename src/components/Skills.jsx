@@ -7,35 +7,39 @@ function Skills() {
       <div className="container">
         <h2>Skills</h2>
         <div className="skills-grid">
+
           <div className="skill-category">
-            <h3>Language</h3>
+            <h3>Languages</h3>
             <ul>
               <li>Python</li>
-              <li>HTML </li>
+              <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
           </div>
+
           <div className="skill-category">
-            <h3>Frameworks</h3>
+            <h3>Frameworks & Libraries</h3>
             <ul>
-              <li>REST Framework</li>
               <li>Django</li>
-              <li>React.JS</li>
-              <li>Bootstarap</li>
+              <li>DRF</li>
+              <li>React.js</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
+
           <div className="skill-category">
-            <h3>Data Base</h3>
+            <h3>Databases</h3>
             <ul>
               <li>MongoDB</li>
-              <li>SQL</li>
+              <li>MySQL</li>
               <li>PostgreSQL</li>
-              <li>MySql</li>
+              <li>SQL</li>
             </ul>
           </div>
+
           <div className="skill-category">
-            <h3>Other Tools</h3>
+            <h3>Tools & Platforms</h3>
             <ul>
               <li>Git</li>
               <li>GitHub</li>
@@ -43,6 +47,7 @@ function Skills() {
               <li>Postman</li>
             </ul>
           </div>
+
         </div>
       </div>
     </section>
