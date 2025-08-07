@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #111827; /* Match your site background */
+  background-color: #111827;
 }
 
 /* Title styling */
@@ -13,7 +13,7 @@
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2.5rem;
-  color: #fff; /* Override var(--dark) if needed */
+  color: #fff;
   font-family: var(--font-heading);
 }
 
@@ -26,6 +26,7 @@
   margin: 0 auto;
   padding: 20px;
   gap: 20px;
+  flex-wrap: wrap; /* Wrap on small screens */
 }
 
 /* Navigation arrows */
@@ -44,13 +45,13 @@
 
 /* Quote box styling */
 .quote-box {
-  flex: 1;
+  flex: 1 1 100%;
   padding: 30px;
   border: 2px solid #ccc;
   border-radius: 10px;
   background-color: #1a1d2e;
   text-align: center;
-  box-shadow: #6b7280;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   color: #fff;
 }
 
@@ -59,6 +60,7 @@
   font-size: 1.5rem;
   font-style: italic;
   margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 /* Author text */
@@ -66,4 +68,44 @@
   font-size: 1rem;
   font-weight: bold;
   color: #bbb;
+}
+
+/* --------------------
+   Responsive Tweaks
+-------------------- */
+@media (max-width: 768px) {
+  .quote-carousel-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel-button {
+    font-size: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.25rem;
+  }
+
+  #querts h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-box {
+    padding: 20px;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+
+  .quote-author {
+    font-size: 0.9rem;
+  }
+
+  #querts h2 {
+    font-size: 1.75rem;
+  }
 }
