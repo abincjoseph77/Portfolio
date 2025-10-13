@@ -7,7 +7,7 @@ function Home() {
 
   // Function to handle CV download
   const handleDownloadCV = () => {
-    const cvUrl = '/documents/abin_C_j_Resume (2).pdf';
+    const cvUrl = '/documents/abin_c_j_Resume (4).pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
     link.download = 'Abion_CJ_CV.pdf';
