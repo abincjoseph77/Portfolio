@@ -73,7 +73,7 @@ function Contact() {
             <p><i className="fas fa-envelope"></i> abincjoseph77@gmail.com</p>
             <p><i className="fas fa-phone"></i> 9447444508</p>
             <div className="social-links">
-              <a href="https://github.com/Abincjoseph20" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+              <a href="https://github.com/abincjoseph77" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
               <a href="https://www.linkedin.com/in/abin-c-joseph/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
             </div>
           </div>
