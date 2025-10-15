@@ -1,4 +1,6 @@
-/* Header Styles */
+/* ============================
+   Header Styles
+============================ */
 header {
   position: fixed;
   top: 0;
@@ -6,17 +8,17 @@ header {
   width: 100%;
   z-index: 1000;
   padding: 1.5rem 0;
-  transition: var(--transition);
+  transition: 0.3s;
   backdrop-filter: blur(10px);
   background-color: rgba(17, 24, 39, 0.9);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   color: white;
 }
 
 header.scrolled {
   padding: 1rem 0;
-  background-color: rgba(17, 24, 39, 0.98) !important;
-  box-shadow: var(--shadow-md);
+  background-color: rgba(17, 24, 39, 0.98);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 header .container {
@@ -24,28 +26,28 @@ header .container {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header-title {
   display: flex;
   gap: 0.75rem;
-  font-size: 2rem;
-  color: var(--primary);
+  font-size: 1.5rem;
   font-weight: bold;
-  align-items: center;
+  color: #4f46e5; /* primary color */
 }
 
-.header-icon {
-  font-size: 2rem;
-  transition: var(--transition);
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
 }
 
-header h2 {
-  font-size: 1.1rem;
-  color: var(--dark-gray);
-  font-weight: 400;
-}
-
+/* Navigation */
 nav ul {
   display: flex;
   list-style: none;
@@ -60,7 +62,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
-  transition: var(--transition);
+  transition: 0.3s;
   padding: 0.5rem 0;
   position: relative;
 }
@@ -72,20 +74,80 @@ nav ul li a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary);
-  transition: var(--transition);
+  background: #818cf8; /* primary light */
+  transition: 0.3s;
 }
 
-nav ul li a:hover::after,
-nav ul li a:focus::after {
+nav ul li a:hover::after {
   width: 100%;
 }
 
 nav ul li a:hover {
-  color: var(--primary-light);
+  color: #a5b4fc; /* primary light */
 }
 
-/* Theme Toggle */
+/* ============================
+   Responsive Design
+============================ */
+
+/* Tablet + Mobile */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    background-color: rgba(17, 24, 39, 0.95);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  nav ul li a {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Smaller Mobile Phones */
+@media (max-width: 480px) {
+  header .container {
+    width: 95%;
+  }
+
+  nav ul {
+    padding: 0.75rem;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================
+   Theme Toggle (optional)
+============================ */
 .theme-toggle {
   width: 3rem;
   height: 3rem;
@@ -95,7 +157,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: var(--transition);
+  transition: 0.3s;
   color: white;
   border: none;
   margin-left: auto;
@@ -104,22 +166,4 @@ nav ul li a:hover {
 .theme-toggle:hover {
   background: rgba(255,255,255,0.2);
   transform: scale(1.05);
-}
-
-.theme-toggle.active .header-icon {
-  animation: rotate 0.5s ease;
-}
-
-/* Responsive Design */
-@media (min-width: 768px) {
-  header .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  }
-  
-  nav ul {
-    margin-top: 0;
-  }
 }
