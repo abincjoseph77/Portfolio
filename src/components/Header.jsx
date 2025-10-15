@@ -12,7 +12,7 @@ function Header() {
   return (
     <header>
       <div className="container">
-        <h2 className="header-title">My Portfolio</h2>
+        
 
         {/* Hamburger icon */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
