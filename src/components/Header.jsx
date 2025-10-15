@@ -4,10 +4,15 @@ import '../components/style/header.css';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Close menu when clicking any link
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header>
       <div className="container">
-        
+        <h2 className="header-title">My Portfolio</h2>
 
         {/* Hamburger icon */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -17,12 +22,12 @@ function Header() {
         {/* Navigation Menu */}
         <nav className={menuOpen ? "active" : ""}>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#querts">Querts</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" onClick={handleLinkClick}>About</a></li>
+            <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
+            <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
+            <li><a href="#experience" onClick={handleLinkClick}>Experience</a></li>
+            <li><a href="#querts" onClick={handleLinkClick}>Querts</a></li>
+            <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
           </ul>
         </nav>
       </div>
